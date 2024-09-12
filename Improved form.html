@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CSS Form</title>
+    <style>
+        h2 {
+            margin-top: 5px;
+            font-size: 55px;
+            background-color: rgb(255, 85, 0);
+            color: black;
+            font-family: Montserrat;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(195, 199, 235);
+        }
+        fieldset {
+            background-image: url(G5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            width: 700px;
+            margin-top: 0px;
+            border: 3px solid black;
+            border-radius: 8px;
+            margin: auto;
+            color: black;
+            font-family: arial;
+            font-size: 25px;
+            
+             }
+             form {
+                margin-left: 12px;
+             }
+             #fname {
+                 font-size: 25px;
+                 border: 2px solid rgb(74, 73, 77);
+                 margin-left: 12px; 
+                 width: 320px;
+
+              
+             }
+             #lname {
+                 font-size: 25px;
+                 border: 2px solid rgb(74, 73, 77);
+                 margin-right: 12px;
+                 margin-left: 12px;
+                
+                 width: 320px;
+              
+                
+                 
+             }
+             #email {
+                 font-size: 25px;
+                 border: 2px solid rgb(74, 73, 77);
+                 margin-left: 12px;
+                 margin-top: 5px;
+                 width: 400px;
+                 
+                     }
+            #password { 
+                font-size: 25px;
+                 border: 2px solid rgb(74, 73, 77);
+                 margin-left: 12px;
+                 margin-top: 5px;
+                 width: 400px;
+
+            }
+            #passwordtwo { 
+                font-size: 25px;
+                 border: 2px solid rgb(74, 73, 77);
+                 margin-left: 12px;
+                 margin-top: 5px;
+                 width: 400px;
+
+            }
+            #mcq {
+                color: black;
+                font-size: 25px;
+                margin-left: 12px;
+                 margin-top: 5px;
+                font-family: roboto;
+                
+            }
+            #male {
+                color: black;
+                font-size: 25px;
+                margin-left: 12px;
+                margin-top: 2px;
+            }
+            .css {
+                color: white;
+                font-size: 25px;
+                margin-left: 12px;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+            #city {
+                color: white;
+                font-size: 25px;
+                margin-left:49px ;
+                margin-top: 5px;
+                background-color: black;
+
+            }
+            #country {
+                color: white;
+                font-size: 25px;
+                margin-top: 5px;
+                margin-left: 5px;
+                background-color: black;
+            }
+            #State{
+                color: white;
+                font-size: 25px;
+                margin-left: 33px ;
+                margin-top: 5px;
+                background-color: black;
+
+            }
+            label {
+                font-size: 25px;
+                color: black;
+                margin-left: 12px;
+            }
+            .pagal {
+                font-size: 25px;
+                color: black;
+                cursor: pointer;
+            }
+           input:focus{
+               background-color: rgb(176, 255, 188);
+               color: black;
+               border: 2px double black;
+              }
+           .h {
+               font-family: roboto;
+           }
+    </style>
+</head>
+<body>
+    <h2>This form is improved with CSS.</h2>
+    <form accept-charset="utf-8" autocomplete="off" target="_blank" method="post">
+        <fieldset>
+          <!-- If placeholder is being used then no need of labels. -->
+           <input type="text" id="fname" name="fname" placeholder="Enter your name" </input>
+           <input type="text" id="lname" name="lname" placeholder="Enter your last name" </input> <br>
+           <input type="email" id="email" name="email" placeholder="Enter your e-mail" </input> <br>
+           <input type="password" id="password" name="password" placeholder="Set a strong password" </input> <br>
+           <input type="password" id="passwordtwo" name="passwordtwo" placeholder="Confirm password" </input>
+           <p id="mcq"><strong>Gender</strong></p>
+           <input type="radio"  class="css pagal" id="male" name="male" value="male"
+           <label for="male" class="css pagal">Male</label> <br>
+           <input type="radio" class="css pagal" id="Female" name="Female" value="Female"
+           <label for="Female" class="css pagal">Female</label> <br> <br>
+           <label for="city" class="h"><strong>Enter your city:</strong></label>
+           <select name="city" id="city">
+               <option value="Jalandhar">Jalandhar</option>
+               <option value="Amritsar">Amritsar</option>
+               <option value="Ludhiana">Ludhiana</option>
+            </select> <br>
+            <label for="State" class="h"><strong>Enter your state:</strong></label>
+           <select name="State" id="State">
+               <option value="Maharashtra">Maharashtra</option>
+               <option value="Himachal Pradesh">Himachal Pradesh</option>
+               <option value="Punjab">Punjab</option>
+            </select> <br>
+            <label for="country" class="h"><strong>Enter your country:</strong></label>
+           <select name="country" id="country">
+               <option value="U.S.A.">U.S.A.</option>
+               <option value="India">India</option>
+               <option value="Australia">Australia</option>
+            </select>
+           
+        </fieldset>
+
+    </form>
+</body>
+</html>

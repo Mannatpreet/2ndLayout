@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mannatpreet.com</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+    rel="icon"
+    type="image/png"
+    href="favicon_io (2)\android-chrome-192x192.png"
+  />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        header {
+            height: 85px;
+            background-color: rgb(250, 55, 55);
+            display: flex;
+            border-bottom: 3px solid rgb(0, 73, 191);
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+        #logo {
+            margin: 3px;
+            height: 75px;
+            width: 75px;
+            border: 2px solid rgb(0, 73, 191);
+            border-radius: 30px;
+        }
+        #ph {
+            line-height: 85px;
+            font-size: 46px;
+            color: white;
+            font-family: montserrat;
+            text-shadow: 4px 4px rgb(56, 49, 71);
+        }
+        .navitems {
+            margin-left: 7px;
+            font-size: 24px;
+            text-align: center;
+            display: inline-block;
+        }
+        #navitem1 {
+            margin-left: 260px;
+        }
+        .main {
+            background-color: rgb(209, 221, 230);
+            color: rgb(250, 55, 55);
+            border: 2px dashed rgb(0, 73, 191);
+            border-radius: 16px;
+            padding: 1px;
+            cursor: pointer;
+            display: inline-block;
+            width: 125px;
+            transition: width 4s, height 4s, transform 4s;
+        }  
+        .main a{
+            color: rgb(230, 0, 0);
+            font-family: arial;
+        }
+        #navitem4 input {
+            font-size: 27px;
+            width: 140px;
+        }
+        #navitem5 {
+            margin-left: 1px;
+            background-color: white;
+            color: rgb(230, 0, 0);
+            font-size: 28px;
+            border: 2px solid rgb(0, 73, 191);
+            border-radius: 0px;
+        }
+        #navitem4 input{
+            transition: width 1.2s; 
+            transition-timing-function: ease;
+        }
+        #navitem4 input:focus{
+            width: 380px;
+            height: 45px;
+            background-color: rgb(159, 232, 158);
+        }
+        .main:hover {
+            background-color: black;
+            color: white;
+            border: 2px dashed white;
+            transform: scale(1.4,1.4);
+        }
+        #maincontent {
+            width: 100%;
+            height: 820px;
+            /* background-color: red; */
+            background-color: rgb(115, 144, 158);
+            display: flex;
+        }
+        #leftL {
+            width: 18%;
+            height: 820px;
+        }
+        #ifa {
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 82%;
+            height: 820px; 
+        }
+        #sidenav {
+            color: rgb(0, 18, 20);
+            background-color: rgb(209, 221, 230);
+            height: 400px;
+            font-family: Verdana;
+            font-size: 24px;
+        } 
+
+        .ssidenav {
+            border: 2px solid rgb(0, 73, 191);
+            margin: 8px 4px;
+            padding: 2px;
+            color: rgb(230, 0, 0);
+            text-align: left;
+            cursor: pointer;
+        }
+        #special_link {
+            margin-top: 1px;
+        }
+        .ssidenav:hover {
+            background-color: rgb(250, 255, 186);
+        }
+        .a {
+            color: rgb(230, 0, 0);
+        }
+        aside {
+            border: none;
+        }
+        #blog {
+            height: 420px; 
+            left: 0px;
+            border: 2px solid rgb(0, 73, 191);
+            background-color: rgb(209, 221, 230);
+        }
+        #logo2 {
+            height: 120px;
+            width: 120px;
+            margin-left: 70px;
+        }
+        #bh {
+            font-size: 28px;
+            text-align: center;
+            font-family: montserrat;
+        }
+        #bp {
+            font-size: 24px;
+            font-family: arial;
+            margin-left: 6px;
+            margin-right: 6px;
+            text-align: justify;
+        }
+        .blogbtn {
+            display: inline-block;
+            border: 2px solid rgb(0, 73, 191);
+            border-radius: 22px ;
+            padding: 0px;
+            font-size: 28px;
+            background-color: rgb(87, 238, 255);
+            margin-top: 26px;
+            margin-left: 40px;
+        }
+        .blogbtn a {
+            font-size: 28px;
+            color: rgb(0, 73, 191);
+            font-family: arial;
+            padding: 4px ;
+        }
+        #footer1 {
+            height: auto;
+            width: 100%;
+            color: white;
+            font-size: 18px;
+            font-family: arial;
+            padding: 10px;
+            background-color: rgb(115, 144, 158);
+
+        }
+        footer a {
+            color: white;
+        }
+        #arr {
+            text-align: center;
+        }
+        #arr2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+        
+    <header id="header">
+        <img id="logo" src="mannatlogo.jpeg" alt="logo" </img>
+        <h1 id="ph">Second Layout</h1>
+        <ul>
+            <li class="navitems main" id="navitem1"><a href="#"</a>Home<span class="material-icons">home</span></li>
+            <li class="navitems main" id="navitem2"><a href="#"</a>Services<span class="material-icons">language</span></li>
+            <li class="navitems main" id="navitem3"><a href="#"</a>Contact<span class="material-icons">call</span></li>
+            <li class="navitems" id="navitem4"><input type="search" placeholder="Search.."></li>
+            <li class="navitems" id="navitem5"><span class="material-icons">search</span></li>
+        </ul>
+    </header>
+
+    <div id="maincontent">
+        <div id="leftL">
+            <aside id="sidenav">
+                <ul>
+                    <li class="ssidenav" id="special_link"><a class="a" href="HTML link bookmark.html" target="ifa"</a>Link Bookmark<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="HTML forms.html"</a>Forms<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a"  target="ifa" href="HTML lists.html"</a>Lists<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="HTML practice.html"</a>Practical<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="Improved Table.html"</a>Improved Table<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="HTML video.html"</a>Videos<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="Animate.html"</a>Animations<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                    <li class="ssidenav"><a class="a" target="ifa" href="Improved form.html"</a>Improved Form<span class="material-icons">
+                        arrow_right
+                        </span></li>
+                </ul>
+            </aside>
+            <div id="blog">
+                <h3 id="bh">About me</h3>
+                <img id="logo2" src="aboutme.jpg" alt="my pic" </img>
+                <p id="bp">I have been into HTML learning since last one month and whatever I have learnt, I have put it all together in my 2<sup>nd</sup> HTML website layout.</p>
+                <li class="blogbtn"><a href="#">Browse Blog</a></li>
+            </div>
+    </div>
+        <iframe id="ifa" src="Improved Table.html" name="ifa"></iframe>
+    </div>
+
+ 
+    <footer id="footer1">
+        <ul>
+            <li id="arr">2020-2021 All Rights Reserved  &#169</li>
+            <li>
+                <nav id="arr2">
+                    <a href="#header">Go to top | </a>
+                    <a href="#header">Privacy | </a>
+                    <a href="#header">Terms | </a>
+                </nav>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

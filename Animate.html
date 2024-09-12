@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        body {
+            background-color: rgb(189, 197, 199);
+        }
+        a {
+            display: block;
+            width: 200px;
+            font-size: 35px;
+            color: black;
+            background-color: rgb(247, 138, 74);
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 5px;
+            font-family: montserrat;
+            text-decoration: none;
+            transition: width 4s, height 4s, transform 4s;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a:hover {
+            transform: scale(2,2);
+        }
+        #l {
+            display: block;
+            width: 220px;
+            font-size: 35px;
+            color: black;
+            background-color: rgb(247, 138, 74);
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 5px;
+            font-family: montserrat;
+            text-decoration: none;
+            transition: width 4s, height 4s, transform 4s;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            transition-timing-function: ease;
+        }
+        #l:hover {
+            width: 300px;
+            height: 100px;
+            transform: rotate(360deg);
+            line-height: 100px;
+        }
+        #animation {
+           color: black;
+           font-size: 25px;
+           animation-name: mannat;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease;
+           background-color: white;
+           font-family: montserrat;
+           height: auto;
+           width: auto;
+           margin: auto;
+           text-align: center;
+           border: 3px solid black;
+           margin-top: 50px;
+           padding: 0px;
+        }
+        @keyframes mannat {
+            0% {
+                border: 3px solid black;
+                background-color: white;
+            }
+            25% {
+                border: 6px solid rgb(3, 7, 252);
+                border-radius: 35px;
+                background-color: rgb(216, 219, 0);
+            }
+            50% {
+                border: 6px solid rgb(0, 105, 17);
+                border-radius: 70px ;
+                background-color: rgb(255, 66, 66) ;
+            }
+            75% {
+                border: 6px solid rgb(255, 0, 217);
+                border-radius: 70px;
+                background-color: rgb(125, 184, 180) ;
+            }
+            100% {
+                border: 6px solid rgb(158, 0, 0);
+                border-radius: 35px;
+                background-color: rgb(86, 179, 90);
+            }
+           
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="transition">
+        <a href="#">Transition</a>
+
+    </div>
+    <div id="transition2">
+        <a id="l" href="#">Transition 2</a>
+
+    </div>
+    <div id="animation">
+        <p id="m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laudantium eum possimus facere rerum minus eaque fuga tempore, omnis architecto necessitatibus saepe ipsam quidem aut quam natus debitis eligendi. Itaque!
+        Sint, error odio tempore labore nesciunt dolor perspiciatis sit corporis cumque sequi ea illum maxime eaque doloremque exercitationem in id dolores earum doloribus fuga laborum quidem dolore facilis ex?
+ 
+    </div>
+    
+</body>
+</html>
